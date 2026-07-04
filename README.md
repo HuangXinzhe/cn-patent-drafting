@@ -17,13 +17,29 @@
 
 方式一：在 Codex 中通过 GitHub 地址安装（推荐）。
 
-在 Codex 对话中输入：
+1. 打开 Codex，新建或进入任意对话。
+2. 在对话中调用内置的 skill 安装器，并粘贴本仓库地址：
 
 ```text
-Use $skill-installer to install the root skill from https://github.com/HuangXinzhe/cn-patent-drafting as cn-patent-drafting.
+Use $skill-installer to install the root skill from this GitHub repository:
+https://github.com/HuangXinzhe/cn-patent-drafting
+
+Install it as cn-patent-drafting.
 ```
 
-安装后重启 Codex，或开启新的 Codex 会话，使 skill 被重新发现。
+3. 如果 Codex 询问安装路径，选择仓库根目录；本仓库根目录下的 `SKILL.md` 就是 skill 入口。
+4. 安装后重启 Codex，或开启新的 Codex 会话，使 skill 被重新发现。
+5. 测试调用：
+
+```text
+Use $cn-patent-drafting 帮我根据这些技术材料撰写一份中国发明专利技术交底书。
+```
+
+如果希望用命令行安装器，也可以使用：
+
+```bash
+python3 "${CODEX_HOME:-$HOME/.codex}/skills/.system/skill-installer/scripts/install-skill-from-github.py" --repo HuangXinzhe/cn-patent-drafting --path . --name cn-patent-drafting
+```
 
 方式二：手动克隆到 Codex 的 skills 目录。
 
@@ -67,13 +83,29 @@ Key capabilities:
 
 Option 1: install from the GitHub URL inside Codex (recommended).
 
-Type this in a Codex conversation:
+1. Open Codex and start or enter any conversation.
+2. Invoke the built-in skill installer and paste this repository URL:
 
 ```text
-Use $skill-installer to install the root skill from https://github.com/HuangXinzhe/cn-patent-drafting as cn-patent-drafting.
+Use $skill-installer to install the root skill from this GitHub repository:
+https://github.com/HuangXinzhe/cn-patent-drafting
+
+Install it as cn-patent-drafting.
 ```
 
-Restart Codex or open a new Codex session after installation so the skill can be discovered.
+3. If Codex asks for the skill path, choose the repository root; `SKILL.md` is located at the repository root.
+4. Restart Codex or open a new Codex session after installation so the skill can be discovered.
+5. Test the skill:
+
+```text
+Use $cn-patent-drafting to turn these technical materials into a Chinese invention patent disclosure.
+```
+
+You can also use the command-line installer:
+
+```bash
+python3 "${CODEX_HOME:-$HOME/.codex}/skills/.system/skill-installer/scripts/install-skill-from-github.py" --repo HuangXinzhe/cn-patent-drafting --path . --name cn-patent-drafting
+```
 
 Option 2: manually clone this repository into your Codex skills directory.
 

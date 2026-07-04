@@ -1,0 +1,41 @@
+{
+  "name": "cn-patent-drafting",
+  "version": "0.1.0",
+  "description": "Codex plugin for drafting Chinese invention patent disclosures, claims, specifications, abstracts, and revision records.",
+  "author": {
+    "name": "HuangXinzhe",
+    "url": "https://github.com/HuangXinzhe"
+  },
+  "homepage": "https://github.com/HuangXinzhe/cn-patent-drafting",
+  "repository": "https://github.com/HuangXinzhe/cn-patent-drafting",
+  "license": "MIT",
+  "keywords": [
+    "patent",
+    "china-patent",
+    "invention-disclosure",
+    "claims",
+    "specification",
+    "prior-art",
+    "codex-skill"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "CN Patent Drafting",
+    "shortDescription": "Draft Chinese patent disclosures and claims.",
+    "longDescription": "CN Patent Drafting helps Codex identify patentable invention points, draft Chinese invention patent disclosures, claims, specifications, abstracts, and figure descriptions, audit claim support and consistency, and revise existing drafts with timestamped versions and revision logs.",
+    "developerName": "HuangXinzhe",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/HuangXinzhe/cn-patent-drafting",
+    "defaultPrompt": [
+      "Draft a Chinese patent disclosure from my notes.",
+      "Audit these claims against the specification.",
+      "Identify patentable invention points from this paper."
+    ],
+    "brandColor": "#2563EB"
+  }
+}

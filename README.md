@@ -13,10 +13,31 @@
 - 检查权利要求支持性、术语一致性、公式参数一致性和保护范围风险；
 - 支持在已有草稿基础上增量合并、纠错和保留修订记录。
 
-使用时可直接对 Codex 说明需求，例如：
+## 安装
+
+将本仓库克隆到 Codex 的 skills 目录：
+
+```bash
+mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
+git clone https://github.com/HuangXinzhe/cn-patent-drafting.git "${CODEX_HOME:-$HOME/.codex}/skills/cn-patent-drafting"
+```
+
+安装后重启 Codex，或开启新的 Codex 会话，使 skill 被重新发现。核心功能不需要额外依赖；仓库内脚本仅使用 Python 标准库。
+
+## 使用
+
+在 Codex 中直接用 `$cn-patent-drafting` 调用，并提供技术材料、文件路径或撰写目标。例如：
 
 ```text
 Use $cn-patent-drafting 帮我根据这些技术材料撰写一份中国发明专利技术交底书。
+```
+
+也可以指定更具体的任务：
+
+```text
+Use $cn-patent-drafting 帮我基于这篇论文挖掘3个可申请的中国发明专利点。
+Use $cn-patent-drafting 帮我检查这份权利要求书和说明书是否存在支持性问题。
+Use $cn-patent-drafting 帮我在已有交底书基础上合并这些补充材料，并保留修订记录。
 ```
 
 ## English Overview
@@ -32,8 +53,29 @@ Key capabilities:
 - audit claim support, terminology consistency, formulas, parameters, and scope risks;
 - revise existing drafts with timestamped versions and revision logs.
 
-Example prompt:
+## Installation
+
+Clone this repository into your Codex skills directory:
+
+```bash
+mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
+git clone https://github.com/HuangXinzhe/cn-patent-drafting.git "${CODEX_HOME:-$HOME/.codex}/skills/cn-patent-drafting"
+```
+
+Restart Codex or open a new Codex session after installation so the skill can be discovered. The core skill has no extra runtime dependency; bundled helper scripts use only the Python standard library.
+
+## Usage
+
+Invoke the skill in Codex with `$cn-patent-drafting`, then provide your technical materials, file paths, or drafting goal. Example:
 
 ```text
 Use $cn-patent-drafting to turn these technical materials into a Chinese invention patent disclosure and application draft.
+```
+
+More examples:
+
+```text
+Use $cn-patent-drafting to identify three Chinese invention patent opportunities from this paper.
+Use $cn-patent-drafting to audit whether these claims are fully supported by the specification.
+Use $cn-patent-drafting to merge these supplemental materials into the existing disclosure and keep a revision log.
 ```

@@ -19,7 +19,7 @@
 
 ### Codex Desktop Plugin Install
 
-Codex Desktop 也可以将本仓库作为自定义插件市场安装。添加本仓库作为 marketplace source，然后安装 `cn-patent-drafting` 插件：
+Codex Desktop 也可以将本仓库作为自定义插件市场安装。添加本仓库作为 marketplace source 后，`cn-patent-drafting` 会按 `INSTALLED_BY_DEFAULT` 策略默认自动安装：
 
 - Marketplace source: `https://github.com/HuangXinzhe/cn-patent-drafting.git`
 - Branch/ref: `main`
@@ -27,7 +27,7 @@ Codex Desktop 也可以将本仓库作为自定义插件市场安装。添加本
 
 插件根目录位于 `plugins/cn-patent-drafting/`。其中 `skills/` 目录包含 `cn-patent-drafting` skill 的实体副本，不使用 symlink，因此更适合 Codex Desktop 在 Windows 等环境中安装和缓存。
 
-安装后重启 Codex，或开启新的 Codex 会话，使 plugin 内的 skill 被重新发现。测试调用：
+添加后重启 Codex，或开启新的 Codex 会话，使 plugin 内的 skill 被重新发现。测试调用：
 
 ```text
 Use $cn-patent-drafting 帮我根据这些技术材料撰写一份中国发明专利技术交底书。
@@ -94,7 +94,7 @@ Key capabilities:
 
 ### Codex Desktop Plugin Install
 
-Codex Desktop can also install this repository as a custom plugin marketplace. Add this repository as the marketplace source and install the `cn-patent-drafting` plugin:
+Codex Desktop can also install this repository as a custom plugin marketplace. After this repository is added as the marketplace source, `cn-patent-drafting` is installed by default via the `INSTALLED_BY_DEFAULT` policy:
 
 - Marketplace source: `https://github.com/HuangXinzhe/cn-patent-drafting.git`
 - Branch/ref: `main`
@@ -102,7 +102,7 @@ Codex Desktop can also install this repository as a custom plugin marketplace. A
 
 The plugin root lives at `plugins/cn-patent-drafting/`. Its `skills/` directory contains a materialized copy of the `cn-patent-drafting` skill, not a symlink. This keeps Codex Desktop installs portable on Windows and other environments where plugin caches may not preserve symlinks.
 
-Restart Codex or open a new Codex session after installation so the plugin skill can be discovered. Test the skill:
+Restart Codex or open a new Codex session after adding the marketplace so the plugin skill can be discovered. Test the skill:
 
 ```text
 Use $cn-patent-drafting to turn these technical materials into a Chinese invention patent disclosure.

@@ -15,14 +15,24 @@
 
 ## 安装
 
-将本仓库克隆到 Codex 的 skills 目录：
+方式一：在 Codex 中通过 GitHub 地址安装（推荐）。
+
+在 Codex 对话中输入：
+
+```text
+Use $skill-installer to install the root skill from https://github.com/HuangXinzhe/cn-patent-drafting as cn-patent-drafting.
+```
+
+安装后重启 Codex，或开启新的 Codex 会话，使 skill 被重新发现。
+
+方式二：手动克隆到 Codex 的 skills 目录。
 
 ```bash
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
 git clone https://github.com/HuangXinzhe/cn-patent-drafting.git "${CODEX_HOME:-$HOME/.codex}/skills/cn-patent-drafting"
 ```
 
-安装后重启 Codex，或开启新的 Codex 会话，使 skill 被重新发现。核心功能不需要额外依赖；仓库内脚本仅使用 Python 标准库。
+核心功能不需要额外依赖；仓库内脚本仅使用 Python 标准库。
 
 ## 使用
 
@@ -55,14 +65,24 @@ Key capabilities:
 
 ## Installation
 
-Clone this repository into your Codex skills directory:
+Option 1: install from the GitHub URL inside Codex (recommended).
+
+Type this in a Codex conversation:
+
+```text
+Use $skill-installer to install the root skill from https://github.com/HuangXinzhe/cn-patent-drafting as cn-patent-drafting.
+```
+
+Restart Codex or open a new Codex session after installation so the skill can be discovered.
+
+Option 2: manually clone this repository into your Codex skills directory.
 
 ```bash
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
 git clone https://github.com/HuangXinzhe/cn-patent-drafting.git "${CODEX_HOME:-$HOME/.codex}/skills/cn-patent-drafting"
 ```
 
-Restart Codex or open a new Codex session after installation so the skill can be discovered. The core skill has no extra runtime dependency; bundled helper scripts use only the Python standard library.
+The core skill has no extra runtime dependency; bundled helper scripts use only the Python standard library.
 
 ## Usage
 

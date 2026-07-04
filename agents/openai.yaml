@@ -1,0 +1,7 @@
+interface:
+  display_name: "中国专利撰写"
+  short_description: "Draft China patent disclosures, claims, and specs"
+  default_prompt: "Use $cn-patent-drafting 帮我把技术材料整理成中国发明专利交底书和申请文件草稿。"
+
+policy:
+  allow_implicit_invocation: true

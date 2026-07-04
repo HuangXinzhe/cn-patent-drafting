@@ -10,6 +10,8 @@ Confirm the deliverable, then draft only what was requested unless the user asks
 - 摘要: short technical summary, usually around 300 Chinese characters or less unless the user's template says otherwise.
 - 说明书附图: formal figure sheets or figure-source drafts for the specification.
 - 摘要附图: one representative figure for the abstract, usually selected from the specification drawings.
+- 初步查新笔记: preliminary search keywords, closest references, and provisional novelty/difference notes.
+- 发明专利请求书信息确认表: applicant, inventor, priority, agency, contact, and signature/confirmation fields needed for the patent request form.
 - 查新笔记: search table and difference analysis.
 
 ## Complete Invention Patent Package
@@ -27,7 +29,9 @@ Create a case output directory and include at least:
 | `04_说明书摘要.md` / `.docx` | Abstract text, concise and attorney-facing. |
 | `05_说明书附图.md` / `.docx` | Specification drawings, figure titles, reference signs, and diagram sources/placeholders. |
 | `06_摘要附图.md` / `.docx` | Abstract figure or selected representative drawing with reference signs. |
-| `07_查新与差异化分析.md` / `.docx` | Optional but recommended when prior-art search was performed. |
+| `07_初步查新笔记.md` / `.docx` | Preliminary search notes: keywords, sources searched, closest references, provisional novelty points, and search limitations. |
+| `08_发明专利请求书信息确认表.md` / `.docx` | Request-form information checklist: applicant, inventor, contact, priority, agency, fee-reduction, attachments, and items to confirm. |
+| `09_查新与差异化分析.md` / `.docx` | Optional but recommended expanded prior-art and difference analysis when search was performed. |
 | `提交文件清单.md` / `.docx` | Checklist of generated files and items requiring inventor/attorney confirmation. |
 
 Use `.md` as editable source when useful, but the user-facing submission package must include the `.docx` counterparts. If the environment cannot create DOCX files, state the blocker clearly, preserve the `.md` sources, and provide the exact conversion path or command needed to generate DOCX files.
@@ -37,6 +41,16 @@ For drawings:
 - Use Mermaid or another locally available drawing workflow to create source diagrams when the invention is software/system/process oriented.
 - Do not fabricate undisclosed structures. If a drawing requires inventor confirmation, include a clear placeholder such as "需发明人确认的图X".
 - Keep `说明书附图` and `摘要附图` as separate files even if the abstract figure is selected from the same drawing set.
+
+For `发明专利请求书信息确认表`, include confirmation fields for:
+
+- 申请人姓名/名称、统一社会信用代码或证件号、地址、邮编；
+- 发明人姓名、排序、身份证件信息（如用户愿意提供）、是否请求不公布姓名；
+- 联系人、电话、邮箱、通信地址；
+- 专利代理机构和代理师信息（未知则写待填写）；
+- 是否要求优先权、在先申请号、在先申请日、受理机构；
+- 是否请求费用减缴、是否有保密审查或提前公开等特殊事项；
+- 随同提交文件清单和仍需用户/代理人确认的事项。
 
 ## Technical Disclosure Template
 
@@ -166,6 +180,9 @@ outputs/{规范化案件名}_{YYYYMMDDHHmmss}/
   04_说明书摘要.md/.docx
   05_说明书附图.md/.docx
   06_摘要附图.md/.docx
+  07_初步查新笔记.md/.docx
+  08_发明专利请求书信息确认表.md/.docx
+  09_查新与差异化分析.md/.docx
   提交文件清单.md/.docx
 ```
 

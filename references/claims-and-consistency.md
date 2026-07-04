@@ -67,7 +67,8 @@ If a feature appears in claims but not in the description, fix the description o
 
 Run this audit before delivering:
 
-- If generating a Chinese invention patent package, are separate DOCX files present for 技术交底书, 权利要求书, 说明书, 说明书摘要, 说明书附图, and 摘要附图?
+- If generating a Chinese invention patent package, are separate DOCX files present for 技术交底书, 权利要求书, 说明书, 说明书摘要, 说明书附图, 摘要附图, 初步查新笔记, 发明专利请求书信息确认表, and 提交文件清单?
+- Does `发明专利请求书信息确认表` clearly mark unknown applicant, inventor, priority, contact, agency, fee-reduction, and attachment information as 待填写/需确认 rather than inventing it?
 - Does `提交文件清单` list every generated file and every item still requiring inventor/attorney confirmation?
 - Does the draft state a concrete technical problem?
 - Are the technical means enough for a skilled person to implement?

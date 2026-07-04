@@ -10,6 +10,7 @@
 - 辅助进行现有技术检索和差异化分析；
 - 撰写中国专利技术交底书；
 - 起草权利要求书、说明书、说明书摘要、说明书附图和摘要附图；
+- 生成初步查新笔记和发明专利请求书信息确认表；
 - 生成提交专利用的成套 `.docx` 文件，而不只输出单个专利草案；
 - 检查权利要求支持性、术语一致性、公式参数一致性和保护范围风险；
 - 支持在已有草稿基础上增量合并、纠错和保留修订记录。
@@ -84,6 +85,7 @@ Key capabilities:
 - support prior-art search and differentiation analysis;
 - draft Chinese patent disclosure documents;
 - draft claims, specifications, specification abstracts, specification drawings, and abstract drawings;
+- generate preliminary search notes and invention patent request-form information checklists;
 - generate separate `.docx` files for a patent submission package, not only a single draft;
 - audit claim support, terminology consistency, formulas, parameters, and scope risks;
 - revise existing drafts with timestamped versions and revision logs.

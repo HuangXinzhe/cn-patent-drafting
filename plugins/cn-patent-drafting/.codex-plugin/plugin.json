@@ -1,6 +1,6 @@
 {
   "name": "cn-patent-drafting",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Codex plugin for drafting Chinese invention patent disclosures, claims, specifications, abstracts, and revision records.",
   "author": {
     "name": "HuangXinzhe",
